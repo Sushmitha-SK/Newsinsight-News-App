@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;400;500;600;700;800;900&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #EEEEEE;
+}
+
+.card-container {
+  max-height: 400px;
+  overflow: hidden;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.news-description {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /* Change this value to control the number of lines displayed */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+}
+
+.fixed-height-image {
+  height: 200px;
+  /* Set your desired fixed height for the image */
+  object-fit: cover;
+  /* Optional: To control how the image is resized */
+}
+
+.readmorebtn {
+  background: #15B9C3;
+  color: white;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.readmorebtn:hover {
+  background: #0c8f96;
+  color: white;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.newsTypeTitle {
+  position: absolute;
+  top: 168px;
+  background: #15B9C3;
+}
+
+.headlines {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 52px;
+  color: #FFFFFF;
+}
+
+.colcontainer {
+  margin-top: 272px;
+}
+
+.container {
+  margin-top: 80px;
+}
+
+.btn-custom {
+  background-color: #15B9C3;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  margin: 4px;
+  cursor: pointer;
+  border-radius: 4px;
+  width: auto;
+  height: auto;
+  transition: all 0.3s ease;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+
+}
+
+.btn-custom-active {
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #15B9C3;
+  padding: 8px 12px;
+  margin: 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+/* Optional: Add hover styles */
+.btn-custom:hover {
+  background-color: #13a7b0;
+  width: auto;
+  height: auto;
+  transition: all 0.3s ease;
+
+}
+
+.btn-custom-active:hover {
+  background-color: #2cc0c9;
+  width: auto;
+  height: auto;
+
+}
+
+/* Media query for screen sizes below 700px */
+@media (max-width: 700px) {
+  .newsTypeTitle {
+    position: static;
+  }
+
+  .container {
+    margin-top: 20px;
+  }
+}
+
+/* Media query for screen sizes between 701px and 991px */
+@media (min-width: 701px) and (max-width: 991px) {
+  .newsTypeTitle {
+    top: 148px;
+  }
+
+  .container {
+    margin-top: 40px;
+  }
+}
+
+/* Media query for screen sizes between 992px and 1199px */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .newsTypeTitle {
+    top: 128px;
+  }
+
+  .container {
+    margin-top: 60px;
+  }
+}
+
+/* Media query for screen sizes 1200px and above */
+@media (min-width: 1200px) {
+  .newsTypeTitle {
+    top: 168px;
+  }
+
+  .container {
+    margin-top: 80px;
+  }
+}
